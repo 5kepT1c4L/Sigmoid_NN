@@ -19,9 +19,10 @@ class MLP:
         activations = inputs
 
         for w in self.weights:
-            net_inputs = np.dot(activations, w)
 
-            activations = self._sigmoid(net_inputs)
+            net_inputs = np.dot(activations, w) # Matrix multiplcation 
+
+            activations = self._sigmoid(net_inputs) # Each new layer undergoes a sigmoid linearization, even hidden layers
         
         return activations
 
