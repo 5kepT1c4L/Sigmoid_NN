@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # Prediction run
     data = np.array([[0.2, 0.4], [0.3, 0.5]])
     predictions = model.predict(data)
-    print(predictions) #([0.59627783], [0.7523067593574524])
+    print(predictions) 
 
     print("\nPredictions:")
     for d, p in zip(data, predictions):
